@@ -1,0 +1,16 @@
+<%= link_to "my favorites", favorites_url %>
+<%= link_to "my friends", friends_url %>
+<%= link_to "greetings", greeting_url %>
+<%= link_to "search", search_url %>
+<h1>My Favorites</h1>
+
+<%= image_tag "http://www.walltor.com/images/wallpaper/38pics-adorable-persian-kittens-and-persian-cat-wallpapers-photo-fluffy-persian-kittens--persian-cat-photography-59346.jpg", :width => 100%>
+<%= image_tag "http://sierraclub.typepad.com/.a/6a00d83451b96069e2017d3bff7e34970c-400wi", :width => 100%>
+<%= image_tag "http://img4-3.cookinglight.timeinc.net/i/2010/06/1006p78-slice-cake-l.jpg?400:400", :width => 100%>
+<%= image_tag "http://farm7.staticflickr.com/6114/6223049230_2e75d71f84_z.jpg", :width => 100%>
+
+<ul>
+  <% @myFav.each do |myFav| %>
+    <li><%= myFav %></li>
+  <% end %>
+</ul>
